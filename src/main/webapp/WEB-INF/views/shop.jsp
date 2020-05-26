@@ -113,9 +113,7 @@
                     <ul>
                         <li class="active"><a href="#">Chairs</a></li>
                         <li><a href="#">Beds</a></li>
-                        <li><a href="#">Accesories</a></li>
                         <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Home Deco</a></li>
                         <li><a href="#">Dressings</a></li>
                         <li><a href="#">Tables</a></li>
                     </ul>
