@@ -109,28 +109,20 @@
                         <div class="checkout_details_area mt-50 clearfix">
 
                             <div class="cart-title">
-                                <h2>Login</h2>
+                                <h2>Find-password</h2>
                             </div>
 
                             <form action="#" method="post">
                                 <div class="row">
                                      <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" id="id" value="" placeholder="아이디" required>
-                                        
+                                        <input type="text" class="form-control" id="id" value="" placeholder="아이디" required>                                      
                                     </div>
-                                     <div class="col-md-6 mb-3">
-                                     <a href="#" class="btn amado-btn mb-15">로그인</a>
-                                     </div>
-                                     <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" id="password" placeholder="비밀번호" value="" required>
+                                    <div class="col-12  newsletter-text mb-3">
+                                    <p>아이디를 모르시나요?   <a href="find-id.do">아이디 찾기</a></p>
                                     </div>
-                               
-<!--                                     <div class="amado-btn-group mt-30 mb-100"> -->
-                                     <div  class="col-12 mb-3">
-						                
-						               	<a href="sign-up-clause.do" class="btn amado-btn mb-15">회원가입</a>
-						               	<a href="find-id.do" class="btn amado-btn mb-15">아이디 찾기</a>
-						               	<a href="find-password.do" class="btn amado-btn mb-15">비밀번호 찾기</a>
+                      
+                                     <div class="col-12 mb-3">						              					        
+						               	<a href="#" class="btn amado-btn mb-15">다음</a>
 						            </div>
 
                                 </div>
