@@ -252,7 +252,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=100">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>
@@ -289,7 +289,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=101">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>
@@ -326,7 +326,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=102">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>
@@ -363,7 +363,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=103">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>
@@ -400,7 +400,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=104">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>
@@ -437,7 +437,7 @@
                                 <div class="product-meta-data">
                                     <div class="line"></div>
                                     <p class="product-price">$180</p>
-                                    <a href="product-details.do">
+                                    <a href="product-details.do?id=105">
                                         <h6>Modern Chair</h6>
                                     </a>
                                 </div>

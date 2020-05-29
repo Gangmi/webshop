@@ -2,7 +2,6 @@
 
 <!DOCTYPE>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -12,7 +11,7 @@
 
     <!-- Title  -->
     <title>Amado - Furniture Ecommerce Template | Product Details</title>
-
+	
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
@@ -158,6 +157,7 @@
                                 <p class="product-price">$180</p>
                                 <a href="product-details.do">
                                     <h6>White Modern Chair</h6>
+                                    ${id}
                                 </a>
                                 <!-- Ratings & Review -->
                                 <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
@@ -181,16 +181,17 @@
                             </div>
 
                             <!-- Add to Cart Form -->
-                            <form class="cart clearfix" method="post">
+                            <form action="cart.do" class="cart clearfix" method="post" >
                                 <div class="cart-btn d-flex mb-50">
                                     <p>Qty</p>
                                     <div class="quantity">
                                         <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
                                         <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
+                                        <input type="hidden" value=${ id} name='id'/>
                                         <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
                                     </div>
                                     &nbsp; &nbsp; &nbsp; 
-                                    <div><a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
+                                    <div><a href="wishlist.do" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
                                 </div>
                                 <button type="submit" name="addtocart" value="5" class="btn amado-btn">Add to cart</button>
                             </form>
