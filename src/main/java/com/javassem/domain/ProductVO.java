@@ -7,6 +7,7 @@ public class ProductVO {
 	private String p_cat;
 	private int p_price;
 	private int p_quan;
+
 	private String page;
 	
 	public String getPage() {
@@ -15,6 +16,8 @@ public class ProductVO {
 	public void setPage(String page) {
 		this.page = page;
 	}
+
+
 	public int getP_id() {
 		return p_id;
 	}
