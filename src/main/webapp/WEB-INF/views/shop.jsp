@@ -75,7 +75,7 @@
                 <ul>
                     <li><a href="index.do">Home</a></li>
                     <li class="active"><a href="shop.do">Shop</a></li>
-                    <li><a href="product-details.do">Product</a></li>
+                    
                     <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
                     <li><a href="login.do">Login</a></li>
@@ -89,7 +89,7 @@
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="cart.do" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
+                <a href="wishlist.do" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
             </div>
             <!-- Social Button -->
@@ -534,9 +534,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         <li class="nav-item">
                                             <a class="nav-link" href="shop.do">Shop</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="product-details.do">Product</a>
-                                        </li>
+                                       
                                         <li class="nav-item">
                                             <a class="nav-link" href="cart.do">Cart</a>
                                         </li>
