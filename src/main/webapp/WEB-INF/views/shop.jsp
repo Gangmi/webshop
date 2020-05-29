@@ -19,9 +19,9 @@ switch(catNum) {
 
 case "chair" :  catNum="1"; break;
 case "bed" :  catNum="2"; break;
-case "furniture" :  catNum=""; break;
-case "dressing" :  catNum="3"; break;
-case "table" :  catNum="3"; break;
+case "furniture" :  catNum="3"; break;
+case "dressing" :  catNum="4"; break;
+case "table" :  catNum="5"; break;
 
 }
 
