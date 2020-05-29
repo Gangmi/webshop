@@ -73,7 +73,7 @@
                 <ul>
                     <li><a href="index.do">Home</a></li>
                     <li><a href="shop.do">Shop</a></li>
-                    <li class="active"><a href="product-details.do">Product</a></li>
+                    
                     <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
                     <li><a href="login.do">Login</a></li>
@@ -87,7 +87,7 @@
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
                 <a href="cart.do" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
+                <a href="wishlist.do" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
             </div>
             <!-- Social Button -->
@@ -122,24 +122,22 @@
                         <div class="single_product_thumb">
                             <div id="product_details_slider" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url(img/product-img/pro-big-1.jpg);">
+                                    <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-image: url(img/product-img/Dressings2_6.jpg);">
                                     </li>
-                                    <li data-target="#product_details_slider" data-slide-to="1" style="background-image: url(img/product-img/pro-big-2.jpg);">
+                                    <li data-target="#product_details_slider" data-slide-to="1" style="background-image: url(img/product-img/Dressings2_6.jpg);">
                                     </li>
-                                    <li data-target="#product_details_slider" data-slide-to="2" style="background-image: url(img/product-img/pro-big-3.jpg);">
-                                    </li>
-                                    <li data-target="#product_details_slider" data-slide-to="3" style="background-image: url(img/product-img/pro-big-4.jpg);">
-                                    </li>
+                                    <li data-target="#product_details_slider" data-slide-to="2" style="background-image: url(img/product-img/Dressings2_6.jpg);">
+                                    
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <a class="gallery_img" href="img/product-img/pro-big-1.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-1.jpg" alt="First slide">
+                                        <a class="gallery_img" href="img/product-img/Dressings1_1.jpg">
+                                            <img class="d-block w-100" src="img/product-img/Dressings1_1.jpg" alt="First slide">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="gallery_img" href="img/product-img/pro-big-2.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-2.jpg" alt="Second slide">
+                                        <a class="gallery_img" href="img/product-img/Dressings1_1.jpg">
+                                            <img class="d-block w-100" src="img/product-img/Dressings1_1.jpg" alt="Second slide">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
@@ -147,11 +145,7 @@
                                             <img class="d-block w-100" src="img/product-img/pro-big-3.jpg" alt="Third slide">
                                         </a>
                                     </div>
-                                    <div class="carousel-item">
-                                        <a class="gallery_img" href="img/product-img/pro-big-4.jpg">
-                                            <img class="d-block w-100" src="img/product-img/pro-big-4.jpg" alt="Fourth slide">
-                                        </a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -195,6 +189,8 @@
                                         <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
                                         <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
                                     </div>
+                                    &nbsp; &nbsp; &nbsp; 
+                                    <div><a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
                                 </div>
                                 <button type="submit" name="addtocart" value="5" class="btn amado-btn">Add to cart</button>
                             </form>
@@ -265,9 +261,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         <li class="nav-item">
                                             <a class="nav-link" href="shop.do">Shop</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="product-details.do">Product</a>
-                                        </li>
+                                        
                                         <li class="nav-item">
                                             <a class="nav-link" href="cart.do">Cart</a>
                                         </li>

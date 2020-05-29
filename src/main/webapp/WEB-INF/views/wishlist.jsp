@@ -71,7 +71,8 @@
                 <ul>
                     <li><a href="index.do">Home</a></li>
                     <li><a href="shop.do">Shop</a></li>
-                    <li class="active"><a href="cart.do">Cart</a></li>
+                  
+                    <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
                     <li><a href="login.do">Login</a></li>
                 </ul>
@@ -102,7 +103,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="cart-title mt-50">
-                            <h2>Shopping Cart</h2>
+                            <h2>Wish List</h2>
                         </div>
 
                         <div class="cart-table clearfix">
@@ -192,7 +193,7 @@
                                 <li><span>total:</span> <span>$140.00</span></li>
                             </ul>
                             <div class="cart-btn mt-100">
-                                <a href="cart.do" class="btn amado-btn w-100">Checkout</a>
+                                <a href="cart.do" class="btn amado-btn w-100">Add To Cart</a>
                             </div>
                         </div>
                     </div>
