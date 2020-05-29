@@ -1,6 +1,8 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@page import="java.util.List"%>
+<%@page import="com.javassem.domain.ProductVO"  %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,11 @@ String cat=(String)request.getAttribute("cat");
 String pageNum = (String)request.getAttribute("page");
 String catNum = "";
 
-switch(catNum) {
+List<ProductVO> result = (List)request.getAttribute("details");
+
+
+
+/* switch(catNum) {
 
 case "chair" :  catNum="1"; break;
 case "bed" :  catNum="2"; break;
@@ -24,7 +30,7 @@ case "dressing" :  catNum="4"; break;
 case "table" :  catNum="5"; break;
 
 }
-
+ */
 
 %>
     <meta charset="UTF-8">
@@ -34,7 +40,7 @@ case "table" :  catNum="5"; break;
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Amado - Furniture Ecommerce Template | Shop</title>
+    <title><%=result.get(0).getP_cat() %>Amado - Furniture Ecommerce Template | Shop</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -133,11 +139,11 @@ case "table" :  catNum="5"; break;
                 <!--  Catagories  -->
                 <div class="catagories-menu">
                     <ul>
-                        <li class="active"><a href="shop.do?cat=chair">Chairs</a></li>
-                        <li ><a href="shop.do?cat=bed">Beds</a></li>
-                        <li><a href="shop.do?cat=furniture">Furniture</a></li>
-                        <li><a href="shop.do?cat=Dressings">Dressings</a></li>
-                        <li><a href="shop.do?cat=table">Tables</a></li>
+                        <li class="active"><a href="shop.do?p_cat=chair">Chairs</a></li>
+                        <li ><a href="shop.do?p_cat=bed">Beds</a></li>
+                        <li><a href="shop.do?p_cat=furniture">Furniture</a></li>
+                        <li><a href="shop.do?p_cat=dressings">Dressings</a></li>
+                        <li><a href="shop.do?p_cat=table">Tables</a></li>
                     </ul>
                 </div>
             </div>
@@ -272,9 +278,9 @@ case "table" :  catNum="5"; break;
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
-                                    <a href="product-details.do?id=100">
-                                        <h6>Modern Chair</h6>
+                                    <p class="product-price">$<%=result.get(0).getP_price() %></p>
+                                    <a href="product-details.do?id=<%=result.get(0).getP_id()%>">
+                                        <h6><%=result.get(0).getP_name()%></h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -309,9 +315,9 @@ case "table" :  catNum="5"; break;
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
-                                    <a href="product-details.do?id=101">
-                                        <h6>Modern Chair</h6>
+                                    <p class="product-price">$<%=result.get(1).getP_price() %></p>
+                                    <a href="product-details.do?id=<%=result.get(1).getP_id()%>">
+                                        <h6><%=result.get(1).getP_name()%></h6>
                                     </a>
                                 </div>
                                 <!-- Ratings & Cart -->
@@ -350,10 +356,9 @@ case "table" :  catNum="5"; break;
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
-                                    <a href="product-details.do?id=104">
-                                        <h6>Modern Chair</h6>
-                                    </a>
+                                    <p class="product-price">$<%=result.get(2).getP_price() %></p>
+                                    <a href="product-details.do?id=<%=result.get(2).getP_id()%>">
+                                        <h6><%=result.get(2).getP_name()%></h6>
                                 </div>
                                 <!-- Ratings & Cart -->
                                 <div class="ratings-cart text-right">
@@ -387,10 +392,9 @@ case "table" :  catNum="5"; break;
                                 <!-- Product Meta Data -->
                                 <div class="product-meta-data">
                                     <div class="line"></div>
-                                    <p class="product-price">$180</p>
-                                    <a href="product-details.do?id=105">
-                                        <h6>Modern Chair</h6>
-                                    </a>
+                                    <p class="product-price">$<%=result.get(3).getP_price() %></p>
+                                    <a href="product-details.do?id=<%=result.get(3).getP_id()%>">
+                                        <h6><%=result.get(3).getP_name()%></h6>
                                 </div>
                                 <!-- Ratings & Cart -->
                                 <div class="ratings-cart text-right">
