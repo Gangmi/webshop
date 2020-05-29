@@ -76,6 +76,7 @@
                     <li class="active"><a href="product-details.do">Product</a></li>
                     <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
+                    <li><a href="login.do">Login</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -188,6 +189,8 @@
                                         <input type="number" class="qty-text" id="qty" step="1" min="1" max="300" name="quantity" value="1">
                                         <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
                                     </div>
+                                    &nbsp; &nbsp; &nbsp; 
+                                    <div><a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
                                 </div>
                                 <button type="submit" name="addtocart" value="5" class="btn amado-btn">Add to cart</button>
                             </form>
@@ -266,6 +269,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="checkout.do">Checkout</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.do">Login</a>
                                         </li>
                                     </ul>
                                 </div>

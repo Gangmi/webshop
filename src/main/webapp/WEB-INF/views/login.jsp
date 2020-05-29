@@ -1,6 +1,10 @@
 <%@page contentType="text/html; charset=UTF-8"%>
-<!DOCTYPE>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -9,7 +13,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Amado - Furniture Ecommerce Template | Home</title>
+    <title>Amado - Furniture Ecommerce Template | Checkout</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -69,12 +73,12 @@
             <!-- Amado Nav -->
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="index.do">Home</a></li>
+                    <li><a href="index.do">Home</a></li>
                     <li><a href="shop.do">Shop</a></li>
                     <li><a href="product-details.do">Product</a></li>
                     <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
-                    <li><a href="login.do">Login</a></li>
+                    <li class="active"><a href="login.do">Login</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -98,130 +102,69 @@
         </header>
         <!-- Header Area End -->
 
-        <!-- Product Catagories Area Start -->
-        <div class="products-catagories-area clearfix">
-            <div class="amado-pro-catagory clearfix">
+        <div class="cart-table-area section-padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="checkout_details_area mt-50 clearfix">
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <!-- <img src="img/bg-img/1.jpg" alt=""> -->
-                        <img src="img/product-img/Dressings1_5.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Modern Chair</h4>
-                        </div>
-                    </a>
-                </div>
+                            <div class="cart-title">
+                                <h2>Login</h2>
+                            </div>
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/2.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Minimalistic Plant Pot</h4>
-                        </div>
-                    </a>
-                </div>
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <input type="text" class="form-control" id="first_name" value="" placeholder="아이디" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="company" placeholder="비밀번호" value="" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="비밀번호확인" value="" required>
+                                    </div>
+                                  
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control mb-3" id="street_address" placeholder="이름" value="" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="text" class="form-control" id="city" placeholder="이메일" value="" required>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <input type="number" class="form-control" id="phone_number" min="0" placeholder="휴대폰번호" value="" required>
+                                    </div>
+                                   
+                                    
+                                   <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="sample6_postcode" placeholder="우편번호">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+									<input type="button" class="btn amado-btn mb-15" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+									</div>
+									 <div class="col-12 mb-3">
+									<input type="text" class="form-control" id="sample6_address" placeholder="주소"><br>
+									</div>
+									<div class="col-md-6 mb-3">
+									<input type="text" class="form-control" id="sample6_detailAddress" placeholder="상세주소">
+									</div>
+									<div class="col-md-6 mb-3">
+									<input type="text" class="form-control" id="sample6_extraAddress" placeholder="참고항목">
+									</div>
+                                    
+                                    
+<!--                                     <div class="amado-btn-group mt-30 mb-100"> -->
+                                     <div class="col-12 mb-3">
+						                <a href="#" class="btn amado-btn mb-15">취소</a>
+						               	<a href="#" class="btn amado-btn mb-15">확인</a>
+						            </div>
 
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/3.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Modern Chair</h4>
+                                </div>
+                            </form>
                         </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $180</p>
-                            <h4>Night Stand</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $18</p>
-                            <h4>Plant Pot</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/6.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $320</p>
-                            <h4>Small Table</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/7.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Metallic Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/8.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Modern Rocking Chair</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Single Catagory -->
-                <div class="single-products-catagory clearfix">
-                    <a href="shop.do">
-                        <img src="img/bg-img/9.jpg" alt="">
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <div class="line"></div>
-                            <p>From $318</p>
-                            <h4>Home Deco</h4>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Product Catagories Area End -->
     </div>
     <!-- ##### Main Content Wrapper End ##### -->
 
@@ -317,5 +260,55 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/active.js"></script>
 
 </body>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample6_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+</script>
 
 </html>

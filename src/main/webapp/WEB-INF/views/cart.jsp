@@ -74,6 +74,7 @@
                     <li><a href="product-details.do">Product</a></li>
                     <li class="active"><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
+                    <li><a href="login.do">Login</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -268,6 +269,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="checkout.do">Checkout</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.do">Login</a>
                                         </li>
                                     </ul>
                                 </div>
