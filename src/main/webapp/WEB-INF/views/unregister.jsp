@@ -126,7 +126,7 @@
                                     </div>
                                
 <!--                                     <div class="amado-btn-group mt-30 mb-100"> -->
-                                     <div  class="col-12 mb-3">
+                                     <div class="col-12 mb-3">
 						                
 						               	<a href="sign-up-clause.do" class="btn amado-btn mb-15">회원가입</a>
 						               	<a href="find-id.do" class="btn amado-btn mb-15">아이디 찾기</a>
