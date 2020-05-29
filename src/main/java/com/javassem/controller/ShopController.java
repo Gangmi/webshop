@@ -1,5 +1,8 @@
 package com.javassem.controller;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -11,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.javassem.domain.ShopVO;
 import com.javassem.service.ShopService;
@@ -31,10 +35,20 @@ public class ShopController {
 		}	//view page : get ShopList.jsp
 		
 		@RequestMapping("/{step}.do")
-		public String insertShop(@PathVariable String step)
+		public String forwardPage(@PathVariable String step ,ModelAndView mo)
 		{
+		
 			return step;
 		}
+		
+		@RequestMapping("/shop.do")
+		public ModelAndView viewShop (ModelAndView mv,String cat) {
+			mv.setViewName("shop");
+			mv.addObject("cat",cat);
+			mv.addObject("page","1");
+			return mv;
+		}
+		
 		
 		@RequestMapping("/saveShop.do")
 		public String saveShop(ShopVO vo)

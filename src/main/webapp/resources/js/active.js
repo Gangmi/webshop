@@ -115,5 +115,16 @@
             }
         });
     });
+    
+    
+    $(".catagories-menu li").click(function(evt){
+    	
+    	$(".catagories-menu li").removeClass("active");
+    	
+    	$(evt.target).addClass("active");
+    	
+    	
+    });
+    
 
 })(jQuery);
