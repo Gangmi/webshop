@@ -158,7 +158,7 @@
 <!--                                     <div class="amado-btn-group mt-30 mb-100"> -->
                                      <div align="center" class="col-12 mb-3">
 						                <a href="index.do" class="btn amado-btn mb-15">취소</a>
-						               	<a type="submit" href="#" class="btn amado-btn mb-15" >회원가입</a>
+						               	<a type="submit" href="#" class="btn amado-btn mb-15">회원가입</a>
 						            </div>
 
                                 </div>
