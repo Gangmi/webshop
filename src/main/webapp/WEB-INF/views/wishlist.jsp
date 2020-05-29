@@ -103,7 +103,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="cart-title mt-50">
-                            <h2>Wish List</h2>
+                            <h2>Wish List  ${id}</h2>
                         </div>
 
                         <div class="cart-table clearfix">

@@ -191,7 +191,7 @@
                                         <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
                                     </div>
                                     &nbsp; &nbsp; &nbsp; 
-                                    <div><a href="wishlist.do" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
+                                    <div><a href="wishlist.do?id=${id }" class="fav-nav"><img src="img/core-img/favorites.png" alt=""></div>
                                 </div>
                                 <button type="submit" name="addtocart" value="5" class="btn amado-btn">Add to cart</button>
                             </form>

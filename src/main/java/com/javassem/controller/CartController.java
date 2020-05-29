@@ -28,6 +28,12 @@ public class CartController {
 	  System.out.println(quantity);
 	  
 	  }
+	  
+	  @RequestMapping("/wishlist.do")
+	  public void wishlist(String id, Model model)
+	  {
+		  model.addAttribute("id",id);
+	  }
 	 
 
 }
