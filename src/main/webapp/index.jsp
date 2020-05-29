@@ -71,7 +71,7 @@
                 <ul>
                     <li class="active"><a href="index.do">Home</a></li>
                     <li><a href="shop.do">Shop</a></li>
-                    <li><a href="product-details.do">Product</a></li>
+                 
                     <li><a href="cart.do">Cart</a></li>
                     <li><a href="checkout.do">Checkout</a></li>
                     <li><a href="login.do">Login</a></li>
@@ -282,9 +282,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                         <li class="nav-item">
                                             <a class="nav-link" href="shop.do">Shop</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="product-details.do">Product</a>
-                                        </li>
+                                        
                                         <li class="nav-item">
                                             <a class="nav-link" href="cart.do">Cart</a>
                                         </li>
