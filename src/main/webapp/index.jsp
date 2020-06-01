@@ -106,7 +106,7 @@
                 <div class="single-products-catagory clearfix">
                     <a href="shop.do">
                         <!-- <img src="img/bg-img/1.jpg" alt=""> -->
-                        <img src="img/product-img/Dressings1_5.jpg" alt="">
+                        <img src="img/product-img/dressings1_5.jpg" alt="">
                         <!-- Hover Content -->
                         <div class="hover-content">
                             <div class="line"></div>
