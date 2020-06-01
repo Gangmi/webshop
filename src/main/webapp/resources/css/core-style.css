@@ -1076,7 +1076,7 @@ img {
     z-index: 1;
     overflow: hidden; }
     .single-product-wrapper .product-img img {
-      width: 70%;
+      width: 100%;
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms; }
     .single-product-wrapper .product-img .hover-img {
@@ -1085,7 +1085,7 @@ img {
       position: absolute;
       top: 0;
       left: 0;
-      width: 75%;
+      width: 100%;
       z-index: 10;
       opacity: 0;
       visibility: hidden; }
@@ -1207,7 +1207,7 @@ img {
     .widget .catagories-menu li a:hover, .widget .catagories-menu li a:focus {
       color: #fbb710; }
   .widget .catagories-menu li.active a {
-    color: #f; }
+    color: #fbb710; }
   .widget.price .slider-range-price {
     background-color: #c7d2d8 !important;
     height: 2px;

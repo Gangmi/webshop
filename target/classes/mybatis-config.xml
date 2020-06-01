@@ -7,7 +7,7 @@
 	<!-- Alias 설정 -->
 	<typeAliases>
 
-		<typeAlias alias="product" type="com.javassem.domain.ProductVO" />		
+		<typeAlias alias="product" type="com.javassem.domain.ProductVO" />
 	</typeAliases>
 
 
